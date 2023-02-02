@@ -8,13 +8,13 @@ In the [benchmark_data](benchmark_data) folder, you'll find $400$ $D$-regular gr
 
 #### File Structure
 
-The file structure of each  `G{D}#{N}_{I}.csv` files are as follows:
-- The first line contains four comma separted values. They are
+The file structure of each  `G{D}#{N}_{I}.csv` file are as follows:
+- The first line contains four comma separated values. They are
 	- $N$ - The number of vertices in the graph.
 	- $M$ - The number of edges in the graph.
 	- $C_{opt}$ - The cost of the optimal cut of the graph.
 	- MIPGap - The gap between the lower and upper objective bound divided by the absolute value of the incumbent objective value. A MIPGap of $0.0$ indicates that the solution is optimal.
-- The second line contains the assignments that gives the optimal cut  $C_{opt}$. The $\pm 1$ value at index $i$ corresponds to the value assigned to the node $i$ for the nodes in the range $0, \dots, N-1$.
+- The second line contains the assignments that give the optimal cut  $C_{opt}$. The $\pm 1$ value at index $i$ corresponds to the value assigned to the node $i$ for the nodes in the range $0, \dots, N-1$.
 - The lines $3$ till $M+2$ contain the edges that generate the $D$-regular graph.
 
 #### Usage
