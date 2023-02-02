@@ -14,8 +14,8 @@ The file structure of each  `G{D}#{N}_{I}.csv` files are as follows:
 	- $M$ - The number of edges in the graph.
 	- $C_{opt}$ - The cost of the optimal cut of the graph.
 	- MIPGap - The gap between the lower and upper objective bound divided by the absolute value of the incumbent objective value. A MIPGap of $0.0$ indicates that the solution is optimal.
-- The second line contains the assignments that gives the optimal cut  $C_{opt}$.
-- The lines $3$ till $M+2$ contain the edges that generate the $D$-regular graph. The nodes are in the range $0, \dots, N-1$.
+- The second line contains the assignments that gives the optimal cut  $C_{opt}$. The $\pm 1$ value at index $i$ corresponds to the value assigned to the node $i$ for the nodes in the range $0, \dots, N-1$.
+- The lines $3$ till $M+2$ contain the edges that generate the $D$-regular graph.
 
 #### Usage
 The following Python code allows to reads the `G{D}#{N}_{I}.csv` and returns the graph attributes along with the list of edges. The edge list can be used to construct the $D$-regular graph using libraries such as the [NetworkX](https://networkx.org/) library.
