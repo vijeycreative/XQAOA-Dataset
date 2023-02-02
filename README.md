@@ -1,4 +1,3 @@
-
 # Benchmark and Simulation Data for XQAOA
 
 This repository contains the $D$-regular graphs and their optimal cut solutions, which were used to benchmark classical and quantum algorithms in the paper *An Expressive Ansatz for Low-Depth Quantum Optimization*. You will also find the simulation data and scripts used to produce the plots in this repository. We aim to make this repository valuable for those who wish to benchmark their quantum algorithms on the MaxCut problem.
@@ -45,14 +44,14 @@ def read_graph(D, N, I):
 
 The data collected in the numerical simulations are located in the [simulation_data](simulation_data) folder. They too are present in a machine-readable CSV format, however, these CSV files are also readable by the Python Pandas library (Pandas can read these CSV files as a DataFrame object.) The CSV file names follow the same convention as those in [benchmark_data](benchmark_data) folder,  `G{D}#{N}_{I}.csv`, where $D$ stands for the degree of the graph, $N$ represents the number of vertices, and $I$ represents the specific instance of the graph.
 
-The CSV files present in the root of the [simulation_data](simulation_data) folder contain the numerical simulation results of benchmarking XQAOA$_1^{\mathrm{X=Y}}$, MA-QAOA$_1$, QAOA$_1$, and QAOA$_1^*$ ansatz against the Classical-Relaxed and the state-of-the-art Goemans-Williamson algorithm for $100$ runs for all the graphs present in the [benchmark_data](benchmark_data) folder. The CSV files present in the following folders
+The CSV files present in the root of the [simulation_data](simulation_data) folder contain the numerical simulation results of benchmarking the $p = 1$ ansatz for the XQAOA (X=Y Mixer), MA-QAOA, QAOA, and QAOA* against the Classical-Relaxed and the state-of-the-art Goemans-Williamson algorithm for $100$ runs for all the graphs present in the [benchmark_data](benchmark_data) folder. The CSV files present in the following folders
 - [simulation_data/XQAOA_No_Gamma](simulation_data/XQAOA_No_Gamma)
 - [simulation_data/XY_QAOA](simulation_data/XY_QAOA)
 - [simulation_data/Y_QAOA](simulation_data/Y_QAOA)
 
- contain the numerical data for the XQAOA$_1^{\mathrm{X=Y}}$ ($\boldsymbol{\gamma} = 0$), XQAOA$_1^{\mathrm{XY}}$, and the XQAOA$_1^{\mathrm{Y}}$ ansatz on the first $10$ instances of the `G3#128_{I}.csv` graphs.
+ contain the numerical data for the $p = 1$ ansatz for the XQAOA (X=Y Mixer with $\gamma = 0$), XQAOA (XY Mixer), and the XQAOA (Y Mixer) on the first $10$ instances of the `G3#128_{I}.csv` graphs.
 
-The CSV files present in [simulation_data/FIG5_Dataset](simulation_data/FIG5_Dataset) contain the data to generate the plot in Figure 5 of the paper. Please note that this CSV file is not readable by the Pandas as a DataFrame object.
+The CSV files present in [simulation_data/FIG5_Dataset](simulation_data/FIG5_Dataset) contain the data to generate the plot in Figure 5 of the paper. Please note that these CSV files are not readable by the Pandas as a DataFrame object.
 
 For usage of these simulation data, please refer the python scripts present in the [plot_scripts](plot_scripts) folder.
 
