@@ -1,7 +1,6 @@
-
 # Benchmark and Simulation Data for XQAOA
 
-This repository includes the $D$-regular graphs and the optimal cut solutions that were utilized to evaluate the performance of both classical and quantum algorithms in the research paper titled "An Expressive Ansatz for Low-Depth Quantum Optimization." The repository also comprises the simulation data and scripts utilized to generate the plots in the paper. Additionally, it includes a minimal working example in Python that demonstrates how to simulate the XQAOA ansatz using classical methods. Our goal is to make this repository useful for those who want to compare the performance of their quantum algorithms against the MaxCut problem.
+This repository includes the $D$-regular graphs and the optimal cut solutions that were utilized to evaluate the performance of both classical and quantum algorithms in the research paper titled [An Expressive Ansatz for Low-Depth Quantum Optimization](https://arxiv.org/abs/2302.04479). The repository also comprises the simulation data and scripts utilized to generate the plots in the paper. Additionally, it includes a minimal working example in Python that demonstrates how to simulate the XQAOA ansatz using classical methods. Our goal is to make this repository useful for those who want to compare the performance of their quantum algorithms against the MaxCut problem.
 
 ##  Benchmark Data
 
@@ -59,10 +58,10 @@ For usage of these simulation data, please refer the python scripts present in t
 ## Minimal Working Example
 
  The [mwe](mwe) folder contains the minimal working example implemented in Python for classically simulating the XQAOA ansatz on the MaxCut problem.  The minimal working example consists of three files
- - [Graph.py](mwe/Graph.py) - This script stores a graph along with its relevalant attributes in a datastructure that is most suited to the needs of the XQAOA ansatz.
+ - [Graph.py](mwe/Graph.py) - This script stores a graph along with its relevant attributes in a datastructure that is most suited to the needs of the XQAOA ansatz.
  - [XQAOA.py](mwe/XQAOA.py) - This scripts contains the XQAOA class that allows for classical simulation of the XQAOA ansatz for the MaxCut problem.
- - [Example.ipynb](mwe/Example.ipynb) - A Jupyter Notebook that contains an example for classically simulating the XQAOA ansatz and its variants on a simple $3$-regular graph.
+ - [Example.ipynb](mwe/Example.ipynb) - A Jupyter Notebook that contains an example for classically simulating the XQAOA ansatz and its variants on a simple $3$-regular graph.  
 
 ## Usage and Citation
 
-Please consider citing this repository and our paper *An Expressive Ansatz for Low-Depth Quantum Optimization* if you find this repository useful and use it in your research for benchmarking purposes.
+Please consider citing our paper [An Expressive Ansatz for Low-Depth Quantum Optimization](https://arxiv.org/abs/2302.04479) if you find this repository useful and use it in your research for benchmarking purposes.
