@@ -1,0 +1,30 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: XQAOA-Dataset
+message: Benchmark and Simulation Data for XQAOA
+type: dataset
+authors:
+  - given-names: V Vijendran
+    email: v.vijendran@anu.edu.au
+    affiliation: Australian National University
+    orcid: 'https://orcid.org/0000-0003-3398-1821'
+identifiers:
+  - type: url
+    value: 'https://github.com/vijeycreative/XQAOA-Dataset'
+    description: URL to GitHub Repository
+abstract: >-
+  This repository includes the D-regular graphs and the
+  optimal cut solutions that were utilized to evaluate the
+  performance of both classical and quantum algorithms in
+  the research paper titled An Expressive Ansatz for
+  Low-Depth Quantum Approximate Optimization. The repository
+  also comprises the simulation data and scripts utilized to
+  generate the plots in the paper. Additionally, it includes
+  a minimal working example in Python that demonstrates how
+  to simulate the XQAOA ansatz using classical methods. Our
+  goal is to make this repository useful for those who want
+  to compare the performance of their quantum algorithms
+  against the MaxCut problem.
+date-released: '2023-02-09'

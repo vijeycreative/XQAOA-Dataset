@@ -1,10 +1,11 @@
+
 # Benchmark and Simulation Data for XQAOA
 
 This repository includes the $D$-regular graphs and the optimal cut solutions that were utilized to evaluate the performance of both classical and quantum algorithms in the research paper titled [An Expressive Ansatz for Low-Depth Quantum Optimization](https://arxiv.org/abs/2302.04479). The repository also comprises the simulation data and scripts utilized to generate the plots in the paper. Additionally, it includes a minimal working example in Python that demonstrates how to simulate the XQAOA ansatz using classical methods. Our goal is to make this repository useful for those who want to compare the performance of their quantum algorithms against the MaxCut problem.
 
 ##  Benchmark Data
 
-In the [benchmark_data](benchmark_data) folder, you'll find $400$ $D$-regular graphs with $128$ and $256$ vertices for $3 \leq D \leq 10$. These graphs are presented in a machine-readable CSV format and are named according to the convention `G{D}#{N}_{I}.csv`, where $D$ stands for the degree of the graph, $N$ represents the number of vertices, and $I$ represents the specific instance of the graph. For each combination of $D$ and $N$, there are $25$ unique instances.
+In the [benchmark_data](benchmark_data) folder, you'll find a total of $420$ $D$-regular graphs. This includes $20$ $3$-regular graphs, each with 16 vertices, and $200$ $D$-regular graphs of $128$ and $256$ vertices for $3 \leq D \leq 10$. These graphs are presented in a machine-readable CSV format and are named according to the convention `G{D}#{N}_{I}.csv`, where $D$ stands for the degree of the graph, $N$ represents the number of vertices, and $I$ represents the specific instance of the graph. For each combination of $D$ and $N$ (except for $N = 16$), there are $25$ unique instances.
 
 #### File Structure
 
@@ -51,7 +52,7 @@ The CSV files present in the root of the [simulation_data](simulation_data) fold
 
  contain the numerical data for the $p = 1$ ansatz for the XQAOA (X=Y Mixer with $\gamma = 0$), XQAOA (XY Mixer), and the XQAOA (Y Mixer) on the first $10$ instances of the `G3#128_{I}.csv` graphs.
 
-The CSV files present in [simulation_data/FIG5_Dataset](simulation_data/FIG5_Dataset) contain the data to generate the plot in Figure 5 of the paper. Please note that these CSV files are not readable by the Pandas as a DataFrame object.
+The CSV files present in [simulation_data/FIG5_Dataset](simulation_data/FIG5_Dataset) and [simulation_data/FIG7_Dataset](simulation_data/FIG7_Dataset) contain the data to generate the plots in Figures 5 and 7 of the paper. Please note that these CSV files (with the exception of [simulation_data/FIG7_Dataset](simulation_data/FIG7_Dataset)) are not readable by the Pandas as a DataFrame object.
 
 For usage of these simulation data, please refer the python scripts present in the [plot_scripts](plot_scripts) folder.
 
@@ -64,4 +65,4 @@ For usage of these simulation data, please refer the python scripts present in t
 
 ## Usage and Citation
 
-Please consider citing our paper [An Expressive Ansatz for Low-Depth Quantum Optimization](https://arxiv.org/abs/2302.04479) if you find this repository useful and use it in your research for benchmarking purposes.
+Please consider citing this repository and our paper [An Expressive Ansatz for Low-Depth Quantum Optimization](https://arxiv.org/abs/2302.04479) if you find this repository useful and use it in your research for benchmarking purposes.
